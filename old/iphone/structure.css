@@ -1,0 +1,79 @@
+body {
+	
+	}
+
+
+#container {
+	padding: 0px 0px;
+	overflow: hidden;
+	}
+
+/* 4 column grid */
+.oneoffour {
+	width: 70px;
+	}	
+
+
+.twooffour {
+	width: 150px;	
+	}
+
+
+.threeoffour {
+	width: 230px;
+	}
+
+
+.fouroffour {
+	width: 310px;
+	}
+
+/* 3 column grid */
+
+.oneofthree {
+	width: 100px;
+	}
+	
+.twoofthree {
+	width: 200px;
+	}
+	
+.threeofthree {
+	width: 300px;
+}
+
+/* five column grid */
+
+.oneoffive {
+	width: 60px;
+	}
+
+.twooffive {
+	width: 124px;
+	}
+
+.threeoffive {
+	width: 188px;
+	}
+
+.fouroffive {
+	width: 252px;
+	}
+
+.fiveoffive {
+	width: 316px;
+	}
+
+.column {
+	float: left;
+	overflow: hidden;
+/*	3 and 4 column grid margin */
+	margin-left: 10px;
+
+/*	5 column grid margin */
+/* 	margin-left: 4px; */
+
+/* 	border: 1px solid white; */
+
+	}
+	

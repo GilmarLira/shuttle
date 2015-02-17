@@ -1,0 +1,149 @@
+/* ///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+					iPad
+//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////*/
+
+
+@media screen
+ and (min-device-width : 320px) 
+ and (max-device-width : 480px) {
+ 
+ 	.oneoffour 		{	width: 70px;	}	
+	.twooffour 		{ 	width: 150px;	}
+	.threeoffour	{ 	width: 230px;	}
+	.fouroffour 	{	width: 310px; 	}
+
+	.column {
+		float: left;
+		overflow: hidden;
+		margin-left: 10px;
+		}
+
+
+}
+
+
+@media screen 
+and (min-device-width:768px) 
+and (max-device-width: 1024px) 
+and (orientation:portrait) {
+ 	
+/* 8 column grid */
+	.oneofeight		{ 	width: 86px; 	}	
+	.twoofeight 	{ 	width: 182px; 	}
+	.threeofeight 	{	width: 278px; 	}
+	.fourofeight 	{ 	width: 374px; 	}
+	.fiveofeight 	{ 	width: 470px; 	}
+	.sixofeight 	{	width: 566px; 	}
+	.sevenofeight 	{	width: 662px; 	}
+	.eightofeight 	{	width: 758px; 	}
+
+/* 4 column grid */
+	.oneoffour		{ 	width: 177px; 	}	
+	.twooffour 		{ 	width: 369px; 	}
+	.threeoffour 	{	width: 561px; 	}
+	.fouroffour 	{ 	width: 753px; 	}
+		
+	.column {
+		float: left;
+		overflow: hidden;
+		margin-left: 15px;
+		}
+}
+
+
+@media screen and (min-device-width:768px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+/* iphone 4 column grid for left column only*/
+.oneoffour 		{	width: 70px;	}	
+.twooffour 		{ 	width: 150px;	}
+.threeoffour	{ 	width: 230px;	}
+.fouroffour 	{	width: 310px; 	}
+
+/* 16 column grid  */
+	.oneofsixt		{ 	width: 54px; 	}	
+	.twoofsixt 		{ 	width: 118px; 	}
+	.threeofsixt 	{	width: 182px; 	}
+	.fourofsixt 	{ 	width: 246px; 	}
+	.fiveofsixt 	{ 	width: 310px; 	}
+	.sixofsixt 		{	width: 374px; 	}
+	.sevenofsixt 	{	width: 438px; 	}
+	.eightofsixt 	{	width: 502px; 	}
+	.nineofsixt		{ 	width: 566px; 	}	
+	.tenofsixt 		{ 	width: 630px; 	}
+	.elevenofsixt 	{	width: 694px; 	}
+	.twelveofsixt 	{ 	width: 758px; 	}
+	.thrirtofsixt 	{ 	width: 822px; 	}
+	.fourtofsixt 	{ 	width: 886px; 	}
+	.fifthtofsixt 	{ 	width: 950px; 	}
+	.sixtofsixt 	{ 	width: 1014px; 	}
+
+
+/* 8 column grid  */
+	.oneofeight		{ 	width: 108px; 	}	
+	.twoofeight 	{ 	width: 236px; 	}
+	.threeofeight 	{	width: 364px; 	}
+	.fourofeight 	{ 	width: 492px; 	}
+	.fiveofeight 	{ 	width: 620px; 	}
+	.sixofeight 	{	width: 748px; 	}
+	.sevenofeight 	{	width: 876px; 	}
+	.eightofeight 	{	width: 1004px; 	}
+	
+	
+	.column {
+		float: left;
+		overflow: hidden;
+		margin-left: 10px;
+		}
+
+
+
+}
+
+@media screen and (min-device-width:1025px) {
+/* iphone 4 column grid for left column only*/
+.oneoffour 		{	width: 70px;	}	
+.twooffour 		{ 	width: 150px;	}
+.threeoffour	{ 	width: 230px;	}
+.fouroffour 	{	width: 310px; 	}
+
+/* 16 column grid  */
+	.oneofsixt		{ 	width: 54px; 	}	
+	.twoofsixt 		{ 	width: 118px; 	}
+	.threeofsixt 	{	width: 182px; 	}
+	.fourofsixt 	{ 	width: 246px; 	}
+	.fiveofsixt 	{ 	width: 310px; 	}
+	.sixofsixt 		{	width: 374px; 	}
+	.sevenofsixt 	{	width: 438px; 	}
+	.eightofsixt 	{	width: 502px; 	}
+	.nineofsixt		{ 	width: 566px; 	}	
+	.tenofsixt 		{ 	width: 630px; 	}
+	.elevenofsixt 	{	width: 694px; 	}
+	.twelveofsixt 	{ 	width: 758px; 	}
+	.thrirtofsixt 	{ 	width: 822px; 	}
+	.fourtofsixt 	{ 	width: 886px; 	}
+	.fifthtofsixt 	{ 	width: 950px; 	}
+	.sixtofsixt 	{ 	width: 1014px; 	}
+
+
+/* 8 column grid  */
+	.oneofeight		{ 	width: 108px; 	}	
+	.twoofeight 	{ 	width: 236px; 	}
+	.threeofeight 	{	width: 364px; 	}
+	.fourofeight 	{ 	width: 492px; 	}
+	.fiveofeight 	{ 	width: 620px; 	}
+	.sixofeight 	{	width: 748px; 	}
+	.sevenofeight 	{	width: 876px; 	}
+	.eightofeight 	{	width: 1004px; 	}
+	
+	
+	.column {
+		float: left;
+		overflow: hidden;
+		margin-left: 10px;
+		}
+
+
+
+}

@@ -1,0 +1,27 @@
+/* ///////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+					iPad
+//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////*/
+
+#container {
+	padding: 0px 0px;
+	overflow: hidden;
+	}
+
+/* 8 column grid */
+.oneofeight		{ 	width: 128px; 	}	
+.twoofeight 	{ 	width: 246px; 	}
+.threeofeight 	{	width: 274px; 	}
+.fourofeight 	{ 	width: 502px; 	}
+.fiveofeight 	{ 	width: 630px; 	}
+.sixofeight 	{	width: 758px; 	}
+.sevenofeight 	{	width: 886px; 	}
+.eightofeight 	{	width: 1014px; 	}
+
+.column {
+	float: left;
+	overflow: hidden;
+	margin-left: 10px;
+	}
+	

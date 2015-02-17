@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JS Lab </title>
+	<script type="text/javascript">
+	window.onorientationchange = detectIPadOrientation;
+	 
+	function detectIPadOrientation () {  
+  
+	    if ( window.orientation == 0 ) {  
+	    	alert ('Portrait Mode, Home Button bottom');  
+	    }  
+	    else if ( window.orientation == 90 ) {  
+	    	alert ('Landscape Mode, Home Button right');  
+	    }  
+	    else if ( window.orientation == -90 ) {  
+	    	alert ('Landscape Mode, Home Button left');  
+	    }  
+	    else if ( window.orientation == 180 ) {  
+	    	alert ('Portrait Mode, Home Button top');  
+	    }  
+	 }  
+
+	</script>
+</head>
+<body onload=detectIPadOrientation()>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+
+	<meta name="viewport" content="user-scalable=no, initial-scale = 1.0, width=device-width" />
+
+	<title>AAU T</title>
+
+	<link rel="stylesheet" type="text/CSS" href="css/reset.css" />
+	<link rel="stylesheet" type="text/CSS" href="css/ipad/structure.css" />
+	<link rel="stylesheet" type="text/CSS" href="css/ipad/style.css" />
+	
+<!--
+	<link media="only screen and (max-device-width: 480px)" href="css/iphone/style.css" type= "text/css" rel="stylesheet">
+	<link media="only screen and (max-device-width: 480px)" href="css/iphone/structure.css" type= "text/css" rel="stylesheet">
+-->
+	
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-iphone4.png" />
+	
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript">
+	
+	var can13 ;	
+	var can1 ;
+	var can2 ;
+	var can3 ;
+	var can4 ;
+	var can5 ;
+	var can6 ;
+	var can7 ;
+	var can8 ;
+	var can9 ;
+	var can10 ;
+	var can11 ;
+	var can12 ;
+
+
+	var ctx13 ;
+	var ctx1 ;
+	var ctx2 ;
+	var ctx3 ;
+	var ctx4 ;
+	var ctx5 ;
+	var ctx6 ;
+	var ctx7 ;
+	var ctx8 ;
+	var ctx9 ;
+	var ctx10 ;
+	var ctx11 ;
+	var ctx12 ;
+			
+
+	function init() {
+	can13 = document.getElementById("can13");
+	can1 = document.getElementById("can1");
+	can2 = document.getElementById("can2");
+	can3 = document.getElementById("can3");
+	can4 = document.getElementById("can4");
+	can5 = document.getElementById("can5");
+	can6 = document.getElementById("can6");
+	can7 = document.getElementById("can7");
+	can8 = document.getElementById("can8");
+	can9 = document.getElementById("can9");
+	can10 = document.getElementById("can10");
+	can11 = document.getElementById("can11");
+	can12 = document.getElementById("can12");
+
+	ctx13 = can13.getContext("2d");
+	ctx1 = can1.getContext("2d");
+	ctx2 = can2.getContext("2d");
+	ctx3 = can3.getContext("2d");
+	ctx4 = can4.getContext("2d");
+	ctx5 = can5.getContext("2d");
+	ctx6 = can6.getContext("2d");
+	ctx7 = can7.getContext("2d");
+	ctx8 = can8.getContext("2d");
+	ctx9 = can9.getContext("2d");
+	ctx10 = can10.getContext("2d");
+	ctx11 = can11.getContext("2d");
+	ctx12 = can12.getContext("2d");
+
+	
+	drawCircle();
+	}
+
+	function drawCircle() {
+	
+    	ctx13.strokeStyle = "white";
+    	ctx13.lineWidth = "25";
+    	ctx13.lineCap = "round";
+	    ctx13.arc(can13.width / 2, can13.height / 2, 125, Math.PI * 3 / 2, Math.PI, false);
+    	ctx13.stroke();
+    	
+    	ctx1.strokeStyle = "white";
+    	ctx1.lineWidth = "8";
+    	ctx1.lineCap = "round";
+	    ctx1.arc(can1.width / 2, can1.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx1.stroke();
+    	
+    	ctx2.strokeStyle = "white";
+    	ctx2.lineWidth = "8";
+    	ctx2.lineCap = "round";
+	    ctx2.arc(can2.width / 2, can2.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx2.stroke();
+    	
+    	ctx3.strokeStyle = "white";
+    	ctx3.lineWidth = "8";
+    	ctx3.lineCap = "round";
+	    ctx3.arc(can3.width / 2, can3.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx3.stroke();
+    	
+    	ctx4.strokeStyle = "white";
+    	ctx4.lineWidth = "8";
+    	ctx4.lineCap = "round";
+	    ctx4.arc(can4.width / 2, can4.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx4.stroke();
+    	
+    	ctx5.strokeStyle = "white";
+    	ctx5.lineWidth = "8";
+    	ctx5.lineCap = "round";
+	    ctx5.arc(can5.width / 2, can5.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx5.stroke();
+    	
+    	ctx6.strokeStyle = "white";
+    	ctx6.lineWidth = "8";
+    	ctx6.lineCap = "round";
+	    ctx6.arc(can6.width / 2, can6.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx6.stroke();
+    	
+    	ctx7.strokeStyle = "white";
+    	ctx7.lineWidth = "8";
+    	ctx7.lineCap = "round";
+	    ctx7.arc(can7.width / 2, can7.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx7.stroke();
+    	
+    	ctx8.strokeStyle = "white";
+    	ctx8.lineWidth = "8";
+    	ctx8.lineCap = "round";
+	    ctx8.arc(can8.width / 2, can8.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx8.stroke();
+    	
+    	ctx9.strokeStyle = "white";
+    	ctx9.lineWidth = "8";
+    	ctx9.lineCap = "round";
+	    ctx9.arc(can9.width / 2, can9.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx9.stroke();
+    	
+    	ctx10.strokeStyle = "white";
+    	ctx10.lineWidth = "8";
+    	ctx10.lineCap = "round";
+	    ctx10.arc(can10.width / 2, can10.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx10.stroke();
+    	
+    	ctx11.strokeStyle = "white";
+    	ctx11.lineWidth = "8";
+    	ctx11.lineCap = "round";
+	    ctx11.arc(can11.width / 2, can11.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx11.stroke();
+    	
+    	ctx12.strokeStyle = "white";
+    	ctx12.lineWidth = "8";
+    	ctx12.lineCap = "round";
+	    ctx12.arc(can12.width / 2, can12.height / 2, 34, Math.PI * 3 / 2, Math.PI, false);
+    	ctx12.stroke();
+    	    
+    }
+
+		
+	
+		$(document).ready(function(){
+	
+			$("#detailer").css('left','320px');		
+			$(".list").click(function(){			
+				$(this).addClass("active");
+				$("#detailer").removeClass("active");
+				$("#lister").css('zIndex','auto').stop().animate({
+					left: '-320px'
+				}, 400, function(){$(this);});			
+				$("#detailer").css({'zIndex' : '100'}).show().stop().animate({
+					left: '0px'
+				}, 400);						
+			});		
+			$("#detailer").click(function(){
+				$("#detailer").addClass("active");
+				$("#detailer").css('zIndex','auto').stop().animate({
+					left: '320px'
+				}, 400, function(){$(this);});
+				$("#lister").css('zIndex','100').show().stop().animate({
+					left: '0px'
+				}, 400);
+				$(".list").removeClass("active");
+			});
+		});
+
+	</script>
+</head>
+<body onload=init()>
+	<div id="container">
+		<div id="lister">
+<!-- !Search form -->
+			<div class="search"> 
+				<form>
+					
+					<select class="twooffour">
+						<option>466 TOWNSEND</option>
+						<option>860 SUTTER</option>
+						<option>180 NM</option>
+					</select>
+					<select class="twooffour">
+						<option>466 TOWNSEND</option>
+						<option>860 SUTTER</option>
+						<option>180 NM</option>
+					</select>
+					
+				</form>
+			</div>
+
+<!-- !List results -->
+		<div class="filters">
+<!-- 		<div class="bit"></div> -->
+			<h4 class="oneoffour column line">line</h4>
+			<h4 class="oneoffour column time"><span>departs</span></h4>
+			<h4 class="oneoffour column time">arrives</h4>
+			<h4 class="oneoffour column timer"><span>timer</span></h4>
+		</div>
+		
+		<div class="results">
+			
+			
+			<div class="list">
+				<h2 class="oneoffour column line">H</h2>				
+				<h3 class="oneoffour column time"><span>2:45P</span></h3>				
+				<h3 class="oneoffour column time">3:15P</h3>				
+				<h2 class=" timer">5</h2>				
+				<div class="circle"></div>				
+				<canvas id="can1" width="100px" height="100px"></canvas>
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">I</h2>				
+				<h3  class="oneoffour column time"><span>2:55P</span></h3>				
+				<h3  class="oneoffour column time">3:15P</h3>				
+				<h2 class="  timer">10</h2>				
+				<div class="circle"></div>		
+				<canvas id="can2" width="100px" height="100px"></canvas>		
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">J</h2>				
+				<h3  class="oneoffour column time"><span>3:05P</span></h3>				
+				<h3  class="oneoffour column time">3:45P</h3>				
+				<h2 class="  timer">25</h2>				
+				<div class="circle"></div>
+				<canvas id="can3" width="100px" height="100px"></canvas>				
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">D</h2>				
+				<h3  class="oneoffour column time"><span>3:15P</span></h3>				
+				<h3  class="oneoffour column time">3:55P</h3>				
+				<h2 class="  timer">35</h2>				
+				<div class="circle"></div>
+				<canvas id="can4" width="100px" height="100px"></canvas>				
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">H</h2>				
+				<h3 class="oneoffour column time"><span>3:45P</span></h3>				
+				<h3 class="oneoffour column time">4:15P</h3>				
+				<h2 class=" timer">1h</h2>				
+				<div class="circle"></div>
+				<canvas id="can5" width="100px" height="100px"></canvas>				
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">I</h2>				
+				<h3  class="oneoffour column time"><span>2:55P</span></h3>				
+				<h3  class="oneoffour column time">3:15P</h3>				
+				<h2 class="  timer">1h</h2>				
+				<div class="circle"></div>	
+				<canvas id="can6" width="100px" height="100px"></canvas>			
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">J</h2>				
+				<h3  class="oneoffour column time"><span>3:05P</span></h3>				
+				<h3  class="oneoffour column time">3:45P</h3>				
+				<h2 class="  timer">2h</h2>				
+				<div class="circle"></div>
+				<canvas id="can7" width="100px" height="100px"></canvas>				
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">D</h2>				
+				<h3  class="oneoffour column time"><span>3:15P</span></h3>				
+				<h3  class="oneoffour column time">3:55P</h3>				
+				<h2 class="  timer">2h</h2>				
+				<div class="circle"></div>
+				<canvas id="can8" width="100px" height="100px"></canvas>				
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">H</h2>				
+				<h3 class="oneoffour column time"><span>2:45P</span></h3>				
+				<h3 class="oneoffour column time">3:15P</h3>				
+				<h2 class=" timer">2h</h2>				
+				<div class="circle"></div>
+				<canvas id="can9" width="100px" height="100px"></canvas>				
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">I</h2>				
+				<h3  class="oneoffour column time"><span>2:55P</span></h3>				
+				<h3  class="oneoffour column time">3:15P</h3>				
+				<h2 class="  timer">2h</h2>				
+				<div class="circle"></div>
+				<canvas id="can10" width="100px" height="100px"></canvas>				
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">J</h2>				
+				<h3  class="oneoffour column time"><span>3:05P</span></h3>				
+				<h3  class="oneoffour column time">3:45P</h3>				
+				<h2 class="  timer">2h</h2>				
+				<div class="circle"></div>
+				<canvas id="can11" width="100px" height="100px"></canvas>				
+			</div>
+			<div class="list">
+				<h2 class="oneoffour column line">D</h2>				
+				<h3  class="oneoffour column time"><span>3:15P</span></h3>				
+				<h3  class="oneoffour column time">3:55P</h3>				
+				<h2 class="  timer">3h</h2>				
+				<div class="circle"></div>
+				<canvas id="can12" width="100px" height="100px"></canvas>				
+			</div>
+		</div>
+				
+	</div>
+		<div id="detailer">
+			<canvas id="can13" width="300px" height="300px" ></canvas>
+			<div class="detail">
+				<h1>H</h1>
+				<div class="bigcircleback"></div>	
+<!-- 	 			<div class="bigcircle"></div>					 -->
+	 		</div>
+	 		<div class="countdown">
+				<p>5 minutes</p>
+			</div>
+			<div class="schedule">
+				<p><i>2:45p</i> departure</p><p><i>3:15p</i> arrival</p>
+			</div>
+			<div class="stops">
+				<ol>
+					<li>466 townsend</li>
+					<li>180 nm</li>
+					<li>620 sutter</li>
+					<li>860 sutter</li>
+					<li>120 polk</li>
+					<li>601 brannan</li>
+				</ol>
+			</div>
+		
+	</div>
+	</div>
+</body>
+</html>
+

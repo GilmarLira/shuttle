@@ -1,0 +1,24 @@
+// Grid
+// ////////////////////////////////////
+
+@import '../libs/neat/neat-helpers';
+
+// Change the grid settings
+$grid-columns: 16;
+$max-width: 100%;
+// $gutter: 0em;
+
+// Visual Grid Helper
+// $visual-grid: true;
+$visual-grid: false;
+$visual-grid-index: front;
+$visual-grid-opacity: .1;
+$visual-grid-color: #f0f;
+
+// Media Query Breakpoints
+// $small      :new-breakpoint( min-width 320px max-width 480px 16 );
+// $medium     :new-breakpoint( min-width 481px max-width 768px 16 );
+// $big        :new-breakpoint( min-width 769px 16 );
+$small      :new-breakpoint(max-width 480px 16);
+$medium     :new-breakpoint(max-width 768px 16);
+$big        :new-breakpoint(min-width 769px 16);

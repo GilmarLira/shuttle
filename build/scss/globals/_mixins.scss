@@ -1,0 +1,97 @@
+// Helper Mixins
+// ////////////////////////////////////////////////////
+
+@mixin outline( $color: orange ){
+  * { outline: 1px solid $color; }
+}
+
+/* ==========================================================================
+
+   Buttons
+
+   ========================================================================== */
+@mixin button( $color: $color-text, $radius: 3px ){
+	display:inline-block;
+	cursor:pointer;
+	padding: 0.5em 1em;
+	color: $color;
+	background-color: rgba(white,.1);
+	border-radius: $radius;
+	box-shadow: 0 0 0 1px rgba(black,.3);
+  opacity: .5;
+	@include typeface-montserrat;
+	&:after {
+		content: '';
+		
+	}
+	&:hover{
+    opacity: 1;
+	}
+	@include margins($before: 1, $after: 1);
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+
+   Vertical Rhythm and Modular Scale with Baseline Grid by Justin Metros
+   // inspired by www.gridlover.net
+
+   ========================================================================== */
+
+
+// Sass Exponent Mixin
+@function exponent($base, $exponent) {
+  $value: $base;
+  @if $exponent > 1 {
+    @for $i from 2 through $exponent {
+      $value: $value * $base;
+    }
+  }
+  @if $exponent < 1 {
+    @for $i from 0 through -$exponent {
+      $value: $value / $base;
+    }
+  }
+  @return $value;
+}
+
+
+// Rhythm Mixin. Adheres to Baseline Grid.
+@mixin rhythm($scale, $before: 0, $after: 0) {
+  @if $scale == 0 and $before == 0 and $after == 0 {
+    font-size: $body-font-size;
+    line-height: $body-font-size * $body-line-height;
+  }
+  @else {
+    @if $scale == 0 {
+      font-size: $body-font-size;
+      line-height: $body-font-size * $body-line-height;
+    }
+    @else {
+      $new-font-size: round($body-font-size * exponent($scale-factor, $scale));
+      font-size: $new-font-size;
+      line-height: ceil($new-font-size / ($body-line-height * $body-font-size)) * $body-line-height * $body-font-size;
+    }
+    margin-top: $body-font-size * $body-line-height * $before;
+    margin-bottom: $body-font-size * $body-line-height * $after;
+  }
+}
+
+
+// Rhythm Mixin. Margins Only.
+@mixin margins($before: 0, $after: 0) {
+  margin-top: $body-font-size * $body-line-height * $before;
+  margin-bottom: $body-font-size * $body-line-height * $after;
+}
+
+
+// Rhythm Mixin. Padding Only.
+@mixin paddings($before: 0, $after: 0) {
+  padding-top: $body-font-size * $body-line-height * $before;
+  padding-bottom: $body-font-size * $body-line-height * $after;
+}

@@ -1,0 +1,71 @@
+/* Typography
+------------------------------------------------------------ */
+
+$fontfamily-robotoslab: 'Roboto Slab', sans-serif;
+$fontfamily-montserrat: 'Montserrat', sans-serif;
+
+$body-font-size: 18px;
+$body-line-height: 1.6;
+$scale-factor: 1.6; // http://modularscale.com/
+
+
+@mixin typeface-montserrat {
+  font-family: $fontfamily-montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin typeface-robotoslab {
+  font-family: $fontfamily-robotoslab;
+  font-weight: 300;
+}
+
+body { 
+	@include typeface-robotoslab;
+	@include rhythm(0);
+	color: $color-text;
+}
+
+h1, h2, h3, h4, h5, h6,
+.alpha, .beta, .gamma, .delta, .epsilon, .zeta {
+	@include typeface-montserrat;
+}
+
+h1,.alpha { 
+	@include rhythm(3, 0, 1); 
+	line-height: .8;
+    @include media($medium) { @include rhythm(2, 0, .5); }
+}
+
+h2,.beta { 
+	@include rhythm(2, 0, 1); 
+	line-height: .8;
+    @include media($medium) { @include rhythm(1, 0, .5); }
+}
+
+h3,.gamma { 
+	@include rhythm(1, 0, 1); 
+	line-height: .9;
+    @include media($medium) { @include rhythm(0, 0, .5); }
+}
+
+h4,.delta { 
+	@include rhythm(0, 0, 0); 
+	line-height: 1;
+}
+
+h5,.epsilon { 
+	@include rhythm(-1, 0, 0); 
+	line-height: 1;
+}
+
+h6,.zeta { 
+	@include rhythm(-2, 0, 0); 
+	line-height: 1;
+}
+
+p, ul, ol { 
+    @include rhythm(2, 0, 1);
+    @include media($medium) { @include rhythm(1, 0, .5); }
+	@include media($small) { @include rhythm(0, 0, .5); } 
+}

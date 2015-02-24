@@ -1,0 +1,86 @@
+
+// ////////////////  Detail page  /////////////// //
+
+#detailer {
+  @include span-columns(11 of 16);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100%;
+
+  &.inactive { border-left: 1px solid rgba(0, 0, 0, .5); }
+  &.active { background-color: #ffa500; border-left: 1px solid rgba(0, 0, 0, .5); }
+
+  .detail {
+    @include position();
+    height: 500px;
+
+    h1 {
+      @include position();
+      font-family: dosis;
+      font-size: 240px;
+      font-weight: 900;
+      margin: 0 auto;
+      text-align: center;
+      top: 86px;
+      visibility: hidden;
+      width: 162px;
+    }
+  }
+
+  .bigcircleback {
+    @include position(absolute, 40px 152px);
+    background-color: rgba(0, 0, 0, 0);
+    border: 40px solid rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+  }
+
+  #bigcanvas {
+    @include position(absolute, 40px 152px);
+    width: 400px;
+    height: 400px;
+    // z-index: 2;
+  }
+
+  .countdown {
+    visibility: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 72px;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+
+  .schedule {
+    visibility: hidden;
+    width: 400px;
+    margin: 0px auto;
+    padding: 10px 20px 10px 30px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+
+    font-size: 36px;
+    line-height: 48px;
+    word-spacing: 0px;
+
+    white-space: nowrap;
+
+    i {
+      width: 60px;
+      margin-right: 10px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    p {
+        margin-left: 80px;
+        font-weight: 300;
+    }
+  }
+
+  .ruler { width: 50%; border:1px solid white;}
+}

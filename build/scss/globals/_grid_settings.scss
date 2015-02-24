@@ -4,9 +4,9 @@
 @import '../libs/neat/neat-helpers';
 
 // Change the grid settings
-$grid-columns: 16;
+$grid-columns: 8;
 $max-width: 100%;
-// $gutter: 0em;
+$gutter: em(10);
 
 // Visual Grid Helper
 // $visual-grid: true;
@@ -19,6 +19,6 @@ $visual-grid-color: #f0f;
 // $small      :new-breakpoint( min-width 320px max-width 480px 16 );
 // $medium     :new-breakpoint( min-width 481px max-width 768px 16 );
 // $big        :new-breakpoint( min-width 769px 16 );
-$small      :new-breakpoint(max-width 480px 16);
-$medium     :new-breakpoint(max-width 768px 16);
-$big        :new-breakpoint(min-width 769px 16);
+$small      :new-breakpoint(max-width 480px 4);
+$medium     :new-breakpoint(max-width 1024px 16);
+$big        :new-breakpoint(min-width 1025px 16);

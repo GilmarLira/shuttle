@@ -39,10 +39,31 @@ module.exports = function(grunt) {
           livereload: true,
         },
         files: [
-          'css/*.css',
-          'js/*.js',
-          'index.php'
+          'www/css/*.css',
+          'www/js/*.js',
+          'www/index.php'
         ]
+      },
+
+      sass: {
+        options: {
+          livereload: false
+        },
+        files: [
+          'build/scss/globals/*.scss',
+          'build/scss/partials/*.scss',
+        ],
+        tasks: 'sass'
+      },
+
+      js: {
+        options: {
+          livereload: false
+        },
+        files: [
+          'build/js/interactions.js'
+        ],
+        tasks: 'uglify'
       }
     }
   });
